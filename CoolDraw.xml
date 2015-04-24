@@ -1,1 +1,42 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="oled_cleardisplay" id="1" x="96" y="56">
+    <next>
+      <block type="oled_color" id="31">
+        <field name="OBJECT">GREEN</field>
+        <next>
+          <block type="oled_setcursor" id="2" inline="true">
+            <value name="STARTX">
+              <block type="math_number" id="10">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+            <value name="STARTY">
+              <block type="math_number" id="11">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+            <next>
+              <block type="oled_setend" id="3" inline="true">
+                <value name="ENDX">
+                  <block type="math_number" id="12">
+                    <field name="NUM">19</field>
+                  </block>
+                </value>
+                <value name="ENDY">
+                  <block type="math_number" id="13">
+                    <field name="NUM">19</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="oled_linerect" id="22">
+                    <field name="OBJECT">RECT</field>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
