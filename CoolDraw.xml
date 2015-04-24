@@ -30,6 +30,44 @@
                 <next>
                   <block type="oled_linerect" id="22">
                     <field name="OBJECT">RECT</field>
+                    <next>
+                      <block type="oled_color" id="35">
+                        <field name="OBJECT">GREEN</field>
+                        <next>
+                          <block type="oled_setcursor" id="32" inline="true">
+                            <value name="STARTX">
+                              <block type="math_number" id="33">
+                                <field name="NUM">40</field>
+                              </block>
+                            </value>
+                            <value name="STARTY">
+                              <block type="math_number" id="34">
+                                <field name="NUM">0</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="oled_setend" id="36" inline="true">
+                                <value name="ENDX">
+                                  <block type="math_number" id="37">
+                                    <field name="NUM">59</field>
+                                  </block>
+                                </value>
+                                <value name="ENDY">
+                                  <block type="math_number" id="38">
+                                    <field name="NUM">19</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="oled_linerect" id="39">
+                                    <field name="OBJECT">RECT</field>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
                   </block>
                 </next>
               </block>
